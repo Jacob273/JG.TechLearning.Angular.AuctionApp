@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuItem } from './menu-item';
 
 @Component({
   selector: 'app-main-menu',
@@ -13,6 +14,11 @@ export class MainMenuComponent implements OnInit {
   };
 
   showMenu = false;
+  menuItems: MenuItem[] = [
+    {name: 'Aukcje', link: 'auctions'},
+    {name: 'Promocje', link: 'promotions'},
+    {name: 'Podpowiadamy', link: 'advices'}
+  ];
 
   constructor() { }
 
@@ -21,8 +27,7 @@ export class MainMenuComponent implements OnInit {
   }
 
 
-handleToggleMenu()
-{
+handleToggleMenu() {
   this.showMenu = !this.showMenu;
 }
 
