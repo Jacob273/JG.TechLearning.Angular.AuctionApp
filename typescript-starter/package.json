@@ -1,0 +1,20 @@
+{
+  "name": "typescript-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/A-clean-node-js/sample-module.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "rxjs": "^6.5.4"
+  }
+}

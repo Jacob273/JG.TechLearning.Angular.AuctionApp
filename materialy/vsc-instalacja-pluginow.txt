@@ -1,0 +1,1 @@
+cat vsc-extensions.list |% { code --install-extension $_}
