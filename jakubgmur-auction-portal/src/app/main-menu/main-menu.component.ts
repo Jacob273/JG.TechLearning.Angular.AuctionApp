@@ -7,11 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainMenuComponent implements OnInit {
 
+  buttonStyle = {
+    color: 'red',
+    backgroundColor: 'lightblue'
+  };
+
   showMenu = false;
 
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 
