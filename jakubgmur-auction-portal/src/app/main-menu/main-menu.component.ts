@@ -31,10 +31,4 @@ handleToggleMenu() {
   this.showMenu = !this.showMenu;
 }
 
-// jesli element ma nazwe Promocje, mamy binding ktory nie wyswietli componentu
-isShown(name: string) : boolean{
-  return name !== "Promocje";
-}
-
-
 }
