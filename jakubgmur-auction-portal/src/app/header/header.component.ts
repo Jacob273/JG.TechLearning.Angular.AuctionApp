@@ -19,9 +19,10 @@ setTimeout(() => {this.onHoverTitle = 'New-Auction-Portal-Subtitle'}, 2000);
 
   }
 
-changeTitle()
+changeTitle(ev : MouseEvent)
 {
-  this.title = "!!!!!!!!!!!!!!......";
+  this.title += ":0101:";
+  console.log(ev);
 }
 
 
