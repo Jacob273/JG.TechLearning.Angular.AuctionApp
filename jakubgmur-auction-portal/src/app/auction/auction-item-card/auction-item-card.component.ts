@@ -9,12 +9,7 @@ import { AuctionItem } from '../auction-item';
 })
 export class AuctionItemCardComponent implements OnInit {
 
-@Input()  auction: AuctionItem = {
-      title: 'Części do aparatu',
-      imgUrl: 'https://i.picsum.photos/id/36/200/200.jpg',
-      description: 'To są super aparaty.',
-      price: 2000
-  };
+@Input()  auction: AuctionItem;
 
 
   constructor() { }
