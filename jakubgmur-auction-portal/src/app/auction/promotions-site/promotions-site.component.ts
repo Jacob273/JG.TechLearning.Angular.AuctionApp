@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class PromotionsSiteComponent implements OnInit {
 
   todaysDate = new Date();
-
+  category = {name: 'Rowery'};
   constructor() { }
 
   ngOnInit(): void {
