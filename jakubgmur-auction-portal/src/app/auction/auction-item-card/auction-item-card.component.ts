@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { AuctionItem } from '../auction-item';
 
 
@@ -9,7 +9,7 @@ import { AuctionItem } from '../auction-item';
 })
 export class AuctionItemCardComponent implements OnInit {
 
-  auction: AuctionItem = {
+@Input()  auction: AuctionItem = {
       title: 'Części do aparatu',
       imgUrl: 'https://i.picsum.photos/id/36/200/200.jpg',
       description: 'To są super aparaty.',
