@@ -18,9 +18,9 @@ import { MenuItem } from '../menu-item';
 export class FooterComponent implements OnInit {
 
   linkItems: MenuItem[] = [
-    {name: 'Polityka Prywatnosci', link: 'aaa'},
-    {name: 'Regulamin', link: 'bbb'},
-    {name: 'Pomoc', link: 'ccc'}
+    {name: 'Polityka Prywatnosci', link: 'privacy-policy'},
+    {name: 'Regulamin', link: 'regulations'},
+    {name: 'Pomoc', link: 'help'}
   ];
 
 
