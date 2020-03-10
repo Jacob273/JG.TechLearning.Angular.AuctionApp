@@ -9,10 +9,11 @@ import { environment } from 'src/environments/environment';
 })
 export class AuctionsService {
 
-
+  private httpClient: HttpClient;
   private baseURL = environment.baseURL;
 
-  constructor(private httpClient: HttpClient) {
+  constructor(httpClient: HttpClient) {
+    this.httpClient = httpClient;
   }
 
   getAll(): Observable<AuctionItem[]> {
