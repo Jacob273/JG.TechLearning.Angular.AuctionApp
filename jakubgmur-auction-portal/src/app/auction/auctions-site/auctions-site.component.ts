@@ -22,9 +22,9 @@ constructor(auctionService: AuctionsService) {
       this.auctions = auctions;
     }, (error: Error)=>
     {
-        console.log("Jest Blad");
+        console.log('Jest Blad');
     },()=>{
-        console.log("Jest Ok.");
+        console.log('Jest Ok.');
     });
   }
 
