@@ -10,8 +10,11 @@ import { AuctionsService } from '../auctions.service';
 export class AuctionsSiteComponent implements OnInit {
 
     auctions: AuctionItem[];
+    private auctionService: AuctionsService;
 
-constructor(private auctionService: AuctionsService) { }
+constructor(auctionService: AuctionsService) { 
+  this.auctionService = auctionService;
+}
 
   ngOnInit(): void {
     this.auctions = this.auctionService.getAll();
