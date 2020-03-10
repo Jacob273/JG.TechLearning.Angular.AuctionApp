@@ -12,7 +12,7 @@ export class AuctionsSiteComponent implements OnInit {
     auctions: AuctionItem[];
     private auctionService: AuctionsService;
 
-constructor(auctionService: AuctionsService) { 
+constructor(auctionService: AuctionsService) {
   this.auctionService = auctionService;
 }
 
