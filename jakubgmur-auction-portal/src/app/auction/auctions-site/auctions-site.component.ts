@@ -17,7 +17,15 @@ constructor(auctionService: AuctionsService) {
 }
 
   ngOnInit(): void {
-    this.auctions = this.auctionService.getAll();
+      this.auctionService.getAll()
+      .subscribe((auctions: AuctionItem[]) => {
+      this.auctions = auctions;
+    }, (error: Error)=>
+    {
+        console.log("Jest Blad");
+    },()=>{
+        console.log("Jest Ok.");
+    });
   }
 
 }
