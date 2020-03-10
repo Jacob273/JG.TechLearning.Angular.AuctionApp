@@ -1,3 +1,7 @@
 h1{
-    color: lightblue;
+    color: rgb(232, 240, 240);
+}
+
+.header-image{
+    background: url("https://i.picsum.photos/id/180/2000/400.jpg") no-repeat center;
 }
