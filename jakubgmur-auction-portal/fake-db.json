@@ -1,39 +1,53 @@
 {
-    "auctions": [
-        {
-            "id": 1,
-            "title": "Części do aparatu",
-            "imgUrl": "https://i.picsum.photos/id/36/200/200.jpg",
-            "description": "To są super aparaty.",
-            "price": 2000
-        },
-        {
-            "id": 2,
-            "title": "Tory",
-            "imgUrl": "https://i.picsum.photos/id/233/200/200.jpg",
-            "description": "To są super tory!",
-            "price": 2374
-        },
-        {
-            "id": 3,
-            "title": "Wakacje",
-            "imgUrl": "https://i.picsum.photos/id/100/200/200.jpg",
-            "description": "Super wakacje!",
-            "price": 7300
-        },
-        {
-            "id": 4,
-            "title": "Koło",
-            "imgUrl": "https://i.picsum.photos/id/99/200/200.jpg",
-            "description": "Super koło do żuka!",
-            "price": 788
-        },
-        {
-            "id": 5,
-            "title": "Trawa",
-            "imgUrl": "https://i.picsum.photos/id/98/200/200.jpg",
-            "description": "Trawa do zasiania!",
-            "price": 70
-        }
-    ]
+  "auctions": [
+    {
+      "id": 1,
+      "title": "Części do aparatu",
+      "imgUrl": "https://i.picsum.photos/id/36/200/200.jpg",
+      "description": "To są super aparaty.",
+      "price": 2000
+    },
+    {
+      "id": 2,
+      "title": "Tory",
+      "imgUrl": "https://i.picsum.photos/id/233/200/200.jpg",
+      "description": "To są super tory!",
+      "price": 2374
+    },
+    {
+      "id": 3,
+      "title": "Wakacje",
+      "imgUrl": "https://i.picsum.photos/id/100/200/200.jpg",
+      "description": "Super wakacje!",
+      "price": 7300
+    },
+    {
+      "id": 4,
+      "title": "Koło",
+      "imgUrl": "https://i.picsum.photos/id/99/200/200.jpg",
+      "description": "Super koło do żuka!",
+      "price": 788
+    },
+    {
+      "id": 5,
+      "title": "Trawa",
+      "imgUrl": "https://i.picsum.photos/id/98/200/200.jpg",
+      "description": "Trawa do zasiania!",
+      "price": 70
+    },
+    {
+      "title": "Testowa aukcja",
+      "price": 120,
+      "imgUrl": "https://i.picsum.photos/id/33/200/200.jpg",
+      "description": "asdsadsa",
+      "id": 6
+    },
+    {
+      "title": "Komputere",
+      "price": 4999,
+      "imgUrl": "https://i.picsum.photos/id/6/200/200.jpg",
+      "description": "Super komputer marki HP",
+      "id": 7
+    }
+  ]
 }
