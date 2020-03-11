@@ -1,7 +1,20 @@
 <section class="mt-3">
     <div class="row">
         <h2 class="col-8">Lista naszych Aukcji</h2>
-        <div class="col-4"> (search) </div>
+        <div class="col-4"> 
+            <div class="input-group mb-3">
+            <div class="input-group-prepend" >
+              <span (click)="inputSearch.focus()" class="input-group-text"><i class="fa fa-search"></i></span>
+            </div>
+            <input
+              #inputSearch
+              type="text"
+              name="title"
+              class="form-control"
+              placeholder="Szukaj..."
+            />
+          </div> 
+        </div>
     </div>
     <app-auction-counter></app-auction-counter>
     <div class="row" >
