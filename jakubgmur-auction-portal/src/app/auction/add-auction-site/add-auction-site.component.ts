@@ -31,7 +31,7 @@ export class AddAuctionSiteComponent implements OnInit {
     auction.imgUrl = 'https://i.picsum.photos/id/' + this.imgId + '/200/200.jpg';
     this.auctionService
         .add(auction)
-        .subscribe((e) => {
+        .subscribe((e: any) => {
           console.log(e);
         }, (error: Error) => {
             console.log('Jest Blad');
