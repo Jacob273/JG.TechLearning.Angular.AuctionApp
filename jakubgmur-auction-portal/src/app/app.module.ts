@@ -8,6 +8,8 @@ import { HeaderComponent } from './header/header.component';
 import { MainMenuComponent } from './main-menu/main-menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { AuctionModule } from './auction/auction.module';
+import { SharedModule } from './shared/shared.module';
+
 // import { AdviceModule } from './advice/advice.module';
 
 @NgModule({
@@ -22,6 +24,7 @@ import { AuctionModule } from './auction/auction.module';
     AppRoutingModule,
     AuctionModule,
     HttpClientModule,
+    SharedModule,
     // AdviceModule
   ],
   providers: [],
