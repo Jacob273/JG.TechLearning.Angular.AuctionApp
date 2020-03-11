@@ -8,6 +8,7 @@ import { PromotionsSiteComponent } from './promotions-site/promotions-site.compo
 import { FilterAuctionPipe } from './filter-auction.pipe';
 import { AddAuctionSiteComponent } from './add-auction-site/add-auction-site.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { AuctionCounterComponent } from './auction-counter/auction-counter.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
     PromotionsSiteComponent,
     FilterAuctionPipe,
     AddAuctionSiteComponent,
-    ShoppingCartComponent],
+    ShoppingCartComponent,
+    AuctionCounterComponent],
   imports: [
     CommonModule,
     AuctionRoutingModule
