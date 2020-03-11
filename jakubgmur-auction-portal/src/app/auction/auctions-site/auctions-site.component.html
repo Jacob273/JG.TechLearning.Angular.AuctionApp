@@ -5,7 +5,7 @@
     </div>
     <app-auction-counter></app-auction-counter>
     <div class="row" >
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let item of auctions">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let item of auctions | filterAuction:'CZ'">
             <!-- Komponent z aukcja  -->
             <app-auction-item-card [auction]="item" (addToCart)="handleAddedToShoppinCart($event)"></app-auction-item-card>
         </div>
