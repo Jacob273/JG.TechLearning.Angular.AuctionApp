@@ -10,6 +10,7 @@ import { AddAuctionSiteComponent } from './add-auction-site/add-auction-site.com
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { AuctionCounterComponent } from './auction-counter/auction-counter.component';
 import { FormsModule } from '@angular/forms';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [AuctionsSiteComponent,
@@ -22,7 +23,8 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     AuctionRoutingModule,
-    FormsModule
+    FormsModule,
+    SharedModule
   ],
   exports: [
     AuctionsSiteComponent
