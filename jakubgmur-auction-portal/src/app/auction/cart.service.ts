@@ -8,9 +8,7 @@ import { BehaviorSubject, of, Observable } from 'rxjs';
 export class CartService {
 
   // BehaviorSubject(HotStream) zapamietuje ostatnia zapamietana wartosc/stan
-  private auctions$ = new BehaviorSubject<AuctionItem[]>([
-    {title: 'Hello koszyk'} as AuctionItem
-  ]);
+  private auctions$ = new BehaviorSubject<AuctionItem[]>([]);
 
   constructor() { }
 
