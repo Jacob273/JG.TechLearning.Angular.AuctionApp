@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CartService } from './../cart.service';
+import { AuctionItem } from './../auction-item';
 
 @Component({
   selector: 'app-shopping-cart',
@@ -7,9 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShoppingCartComponent implements OnInit {
 
-  constructor() { }
+
+  cartItems: AuctionItem[];
+  cartService: CartService;
+
+  constructor(cartService: CartService) {
+    this.cartService = cartService;
+  }
 
   ngOnInit(): void {
+    this.cartService.getItems()
+      .subscribe((auctions: AuctionItem[]) => {
+        this.cartItems = auctions;
+      }, (error: Error) => {
+        console.log('Jest Blad');
+      }, () => {
+        console.log('Jest Ok.');
+      });
   }
 
 }
