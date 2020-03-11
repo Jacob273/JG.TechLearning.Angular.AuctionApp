@@ -1,0 +1,13 @@
+section {
+    background: url('https://i.picsum.photos/id/180/2000/400.jpg') no-repeat center;
+}
+
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+h1.my-blue {
+    color: blue;
+}

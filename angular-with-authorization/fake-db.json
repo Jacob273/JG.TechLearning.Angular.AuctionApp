@@ -1,0 +1,46 @@
+{
+  "auctions": [
+    {
+      "id": 1,
+      "title": "Części do aparatu",
+      "imgUrl": "https://picsum.photos/id/36/200/200",
+      "description": "Nówki części",
+      "price": 2000
+    },
+    {
+      "id": 2,
+      "title": "Folia bąbelkowa",
+      "imgUrl": "https://picsum.photos/id/123/200/200",
+      "description": "SYUWY",
+      "price": 6000
+    },
+    {
+      "id": 3,
+      "title": "Inna nazwa",
+      "imgUrl": "https://picsum.photos/id/13/200/200",
+      "description": "lorem lorem",
+      "price": 2000
+    },
+    {
+      "id": 4,
+      "title": "Inna nazwa 2",
+      "imgUrl": "https://picsum.photos/id/3/200/200",
+      "description": "",
+      "price": 1000
+    },
+    {
+      "id": 5,
+      "title": "Inna nazwa 3",
+      "imgUrl": "https://picsum.photos/id/223/200/200",
+      "description": "",
+      "price": 2000
+    },
+    {
+      "title": "Komputer",
+      "price": 3000,
+      "imgUrl": "https://picsum.photos/id/1/200/200",
+      "description": "Hejo",
+      "id": 6
+    }
+  ]
+}
