@@ -28,8 +28,24 @@ fdescribe('AuctionItemCardComponent', () => {
     const auction: AuctionItem = {title: 'Aukcja - nowy komputer'} as AuctionItem;
     component.auction = auction;
     const spyAddToCart = spyOn(component.addToCart, 'emit');
+    
     // WHEN (ACT)
     component.handleAddToCardClick();
+    
+    // THEN (ASSERT)
+    expect(spyAddToCart).toHaveBeenCalledWith(auction);
+  });
+
+  it('should emit auction when button clicked', () => {
+    // GIVEN (ARRANGE)
+    const auction: AuctionItem = {title: 'Aukcja - nowy komputer'} as AuctionItem;
+    component.auction = auction;
+    const spyAddToCart = spyOn(component.addToCart, 'emit');
+
+    // WHEN (ACT)
+    fixture.detectChanges();
+    fixture.nativeElement.querySelector('.btn btn-primary').click();
+
     // THEN (ASSERT)
     expect(spyAddToCart).toHaveBeenCalledWith(auction);
   });
