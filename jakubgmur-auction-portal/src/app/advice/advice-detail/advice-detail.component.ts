@@ -6,7 +6,7 @@ import { ActivatedRoute, Params } from '@angular/router';
   template: `
     <section>
 
-    <div class="alert alert-info" *ngIf="id === 0"> Wyberz artykuł po lewej aby zobaczyć szczegóły </div>
+    <div class="alert alert-info" *ngIf="!id"> Wyberz artykuł po lewej aby zobaczyć szczegóły </div>
       <div *ngIf="id !== 0">
         Ładuję id: {{id}}
       </div>
@@ -21,14 +21,16 @@ export class AdviceDetailComponent implements OnInit {
 
   constructor(activatedRoute: ActivatedRoute) {
     this.activatedRoute = activatedRoute;
+   }
+
+  ngOnInit(): void {
+    console.log('Hello form advice detail component;');
+
 
     this.activatedRoute.params.subscribe((params: Params) => {
       this.id = Number(params.id);
     });
 
-   }
-
-  ngOnInit(): void {
   }
 
 }
