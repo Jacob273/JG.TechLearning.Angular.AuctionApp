@@ -6,7 +6,9 @@ import { NgForm } from '@angular/forms';
   templateUrl: './add-auction-site.component.html',
   styleUrls: ['./add-auction-site.component.css'],
   styles: [`
-
+      .ng-touched.ng-invalid{
+        border-color: darkred;
+      }
   `]
 })
 export class AddAuctionSiteComponent implements OnInit {
