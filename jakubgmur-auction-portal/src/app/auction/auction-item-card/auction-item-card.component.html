@@ -5,7 +5,7 @@
     <p class="card-text"> Opis: {{ auction.description }}</p>
     <div class="d-flex justify-content-between align-content-center">
       <strong> {{ auction.price }} </strong>
-      <button class="btn btn-primary">
+      <button class="btn btn-primary" (click)="handleAddToCardClick()">
         <i class="fa fa-cart-plus"></i>
       </button>
     </div>
