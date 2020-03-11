@@ -1,18 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { AuctionItem } from '../auction-item';
 import { AuctionsService } from '../auctions.service';
 import { CartService } from './../cart.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-auctions-site',
   templateUrl: './auctions-site.component.html',
   styles: []
 })
-export class AuctionsSiteComponent implements OnInit {
+export class AuctionsSiteComponent implements OnInit, OnDestroy {
 
     auctions: AuctionItem[];
     private auctionService: AuctionsService;
     private cartService: CartService;
+    private subscription: Subscription;
 
 constructor(auctionService: AuctionsService, cartService: CartService) {
   this.auctionService = auctionService;
@@ -20,7 +22,7 @@ constructor(auctionService: AuctionsService, cartService: CartService) {
 }
 
   ngOnInit(): void {
-      this.auctionService.getAll()
+      this.subscription = this.auctionService.getAll()
       .subscribe((auctions: AuctionItem[]) => {
       this.auctions = auctions;
     }, (error: Error) => {
@@ -28,6 +30,11 @@ constructor(auctionService: AuctionsService, cartService: CartService) {
     }, () => {
         console.log('Jest Ok.');
     });
+  }
+
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe();
+    console.log('Destroyed and unsubscribed. Memory leak avoided!');
   }
 
   handleAddedToShoppinCart(eventArg: AuctionItem): void {
