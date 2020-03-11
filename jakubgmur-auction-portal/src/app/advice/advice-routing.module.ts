@@ -15,7 +15,7 @@ const routes: Routes = [
 
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)], //routerModule serwowany dla feature Modulu, .forFeature brzmial by lepiej!
+  imports: [RouterModule.forChild(routes)], // routerModule serwowany dla feature Modulu, .forFeature brzmial by lepiej!
 exports: [RouterModule]
 })
 export class AdviceRoutingModule { }
