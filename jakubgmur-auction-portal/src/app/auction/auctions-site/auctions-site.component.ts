@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, Input, Output } from '@angular/core';
 import { AuctionItem } from '../auction-item';
 import { AuctionsService } from '../auctions.service';
 import { CartService } from './../cart.service';
@@ -11,10 +11,11 @@ import { Subscription } from 'rxjs';
 })
 export class AuctionsSiteComponent implements OnInit, OnDestroy {
 
-    auctions: AuctionItem[];
+    auctions: AuctionItem[] = [];
     private auctionService: AuctionsService;
     private cartService: CartService;
     private subscription: Subscription;
+    searchText = '';
 
 constructor(auctionService: AuctionsService, cartService: CartService) {
   this.auctionService = auctionService;

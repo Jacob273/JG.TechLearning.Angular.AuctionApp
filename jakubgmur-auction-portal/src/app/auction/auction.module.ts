@@ -9,7 +9,7 @@ import { FilterAuctionPipe } from './filter-auction.pipe';
 import { AddAuctionSiteComponent } from './add-auction-site/add-auction-site.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { AuctionCounterComponent } from './auction-counter/auction-counter.component';
-
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AuctionsSiteComponent,
@@ -21,7 +21,8 @@ import { AuctionCounterComponent } from './auction-counter/auction-counter.compo
     AuctionCounterComponent],
   imports: [
     CommonModule,
-    AuctionRoutingModule
+    AuctionRoutingModule,
+    FormsModule
   ],
   exports: [
     AuctionsSiteComponent

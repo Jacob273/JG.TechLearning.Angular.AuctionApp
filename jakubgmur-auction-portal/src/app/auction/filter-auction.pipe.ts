@@ -11,6 +11,7 @@ export class FilterAuctionPipe implements PipeTransform {
     const lowerFilterText = filterText.toLowerCase();
 
     return auctions.filter((auction: AuctionItem) => {
+      // are we afraid of null?
       return auction.title.toLowerCase().includes(lowerFilterText);
     });
   }
