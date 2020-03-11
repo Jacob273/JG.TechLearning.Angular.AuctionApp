@@ -6,10 +6,12 @@ import { NgForm } from '@angular/forms';
   templateUrl: './add-auction-site.component.html',
   styleUrls: ['./add-auction-site.component.css'],
   styles: [`
-    
+
   `]
 })
 export class AddAuctionSiteComponent implements OnInit {
+
+  imgId = 1;
 
   constructor() { }
 

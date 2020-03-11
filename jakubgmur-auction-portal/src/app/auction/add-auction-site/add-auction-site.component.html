@@ -3,7 +3,7 @@
       <img
         class="img-thumbnail"
         alt="Podgląd fotografii"
-        src="https://i.picsum.photos/id/1/600/600.jpg"
+        [src]="'https://i.picsum.photos/id/' + imgId + '/600/600.jpg'"
       />
     </div>
     <div class="col-6">
@@ -62,7 +62,7 @@
               name="imgUrl"
               required
               class="form-control"
-              ngModel
+              [(ngModel)]="imgId"
             />
           </div>
         </div>
