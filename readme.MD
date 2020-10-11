@@ -1,5 +1,6 @@
-A three-day angular course led by 
-[Michal Jablonski - GIT](https://github.com/michaljabi) [Michal Jablonski - LI](https://www.linkedin.com/in/michal-jablonski/)
+A three-day angular course led by Michal Jablonski 
+[Michal's GIT](https://github.com/michaljabi) 
+[Michal's LI](https://www.linkedin.com/in/michal-jablonski/)
 
 
 
